@@ -11,7 +11,7 @@ class Box2<T> {
 }
 
 public class S22_2 {
-	public static <T> boolean compBox(Box2<T> box, T con) { 
+	public static <T> boolean compBox(Box2<? extends T> box, T con) { 
 
 		T bc = box.get(); 
 		if(bc.equals(con)) { // compBox의 con과 값을 비교한다.
